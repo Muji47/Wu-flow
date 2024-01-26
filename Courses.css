@@ -42,7 +42,7 @@ body {
 }
 #page-head{
   background: url(landingpagebg.jpg);
-  height: 13rem;
+  height: 8rem;
   color: white;
   font-size: x-large;
   
@@ -60,6 +60,97 @@ body {
   width: 55%;
   margin: auto;
 }
+main{
+  display: flex;
+  margin: auto;
+  width: 70%;
+  justify-content: space-between;
+}
+
+table {
+  
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+caption {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.filter-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+.round-button {
+  display: inline-block;
+  color: white;
+  background-color: #0052cc;
+  border: none;
+  width: 3rem;
+  height: 2rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.card-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.filter-card input[type="text"],
+.filter-card input[type="range"] {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+#clear-button {
+  background-color: #0052cc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.checkbox-label{
+  font-size: large;
+  font-weight: 600;
+  color: #424d80;
+}
+
+
+
+
+
+
+
+
+
+
+
 ul{
 	list-style: none;
 }
