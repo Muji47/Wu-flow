@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Courses.css"/>
-    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Courses</title>
 </head>
 <body>
         <div class="navbar">
@@ -14,10 +15,138 @@
             <a href="#">Login</a>
         </div>
         <div class=" content-area" id="page-head">
-            <h2>About FLow</h2>
+            <h2>Showing all courses and professors</h2>
         </div> 
         <main>
+            <table>
+                <caption>Courses</caption>
+                <thead>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                        <th>Rating</th>
+                        <th>Useful</th>
+                        <th>Easy</th>
+                        <th>Liked</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>C101</td>
+                        <td>Introduction to Programming</td>
+                        <td>4.5</td>
+                        <td>20%</td>
+                        <td>20%</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td>C101</td>
+                        <td>Introduction to Programming</td>
+                        <td>4.5</td>
+                        <td>20%</td>
+                        <td>20%</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td>C101</td>
+                        <td>Introduction to Programming</td>
+                        <td>4.5</td>
+                        <td>20%</td>
+                        <td>20%</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td>C101</td>
+                        <td>Introduction to Programming</td>
+                        <td>4.5</td>
+                        <td>20%</td>
+                        <td>20%</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td>C101</td>
+                        <td>Introduction to Programming</td>
+                        <td>4.5</td>
+                        <td>20%</td>
+                        <td>20%</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td>C101</td>
+                        <td>Introduction to Programming</td>
+                        <td>4.5</td>
+                        <td>20%</td>
+                        <td>20%</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td>C101</td>
+                        <td>Introduction to Programming</td>
+                        <td>4.5</td>
+                        <td>20%</td>
+                        <td>20%</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td>C101</td>
+                        <td>Introduction to Programming</td>
+                        <td>4.5</td>
+                        <td>20%</td>
+                        <td>20%</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td>C101</td>
+                        <td>Introduction to Programming</td>
+                        <td>4.5</td>
+                        <td>20%</td>
+                        <td>20%</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td>C101</td>
+                        <td>Introduction to Programming</td>
+                        <td>4.5</td>
+                        <td>20%</td>
+                        <td>20%</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td>C101</td>
+                        <td>Introduction to Programming</td>
+                        <td>4.5</td>
+                        <td>20%</td>
+                        <td>20%</td>
+                        <td>20%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="filter-card">
+                <label for="courseCodeFilter" class="card-label">Course Code:</label>
+                <div>
+                    <button class="round-button" onclick="toggleCourseCodeInput()">2xx</button>
+                    <button class="round-button" onclick="toggleCourseCodeInput()">2xx</button>
+                    <button class="round-button" onclick="toggleCourseCodeInput()">2xx</button>
+                </div>
             
+                <label for="ratingRangeFilter" class="card-label">Rating Range:</label>
+                <input type="range" id="ratingRangeFilter" min="0" max="5" step="0.1" value="0">
+                <span id="ratingOutput">0</span>
+            
+                <div>
+                    <label for="offeredCheckbox" id="offer" class="card-label">Offered In:</label>
+                    <input type="checkbox" id="onlineCheckbox"><label for="onlineCheckbox" class="checkbox-label">Online</label>
+                    <input type="checkbox" id="offlineCheckbox"><label for="offlineCheckbox" class="checkbox-label">Offline</label>
+                </div>
+            
+                <div>
+                    <label for="prerequisitesCheckbox" class="card-label">Requirements:</label>
+                    <input type="checkbox" id="prerequisitesCheckbox">
+                    <label for="prerequisitesCheckbox" class="checkbox-label">No prerequisites</label>
+                </div>
+            
+                <button onclick="clearFilters()" id="clear-button">Clear Filters</button>
+            </div>
         </main>
         <footer id="page-foot">
             <ul id="foot-list1" class="foot-list">
