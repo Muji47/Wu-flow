@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: white;
+  overflow: hidden;
+  text-align: center;
+}
+
+.navbar a {
+  display: inline-block;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #142441;
+  font-size: 20px;
+}
+.navbar a span{
+  color: #0052cc;
+}
+.navbar #logo {
+  display: inline-block;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+.navbar i{
+  position: absolute;
+  padding: 1.3rem .5rem;
+  color: rgb(151,160,175);
+}
+.navbar input[type=text] {
+  width: 60%;
+  padding: 12px 25px;
+  margin: 8px 0;
+  background-color: #ebecf0;
+  outline: none;
+  border: 0;
+  border-radius: .3rem;
+}
+#page-head{
+  background: url(landingpagebg.jpg);
+  height: 13rem;
+  color: white;
+  font-size: x-large;
+  
+ 
+}
+.content-area{
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  line-height: 1.5;
+  
+  
+}
+#page-head h2{
+  width: 55%;
+  margin: auto;
+}
+ul{
+	list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#page-foot{
+	display: flex;
+	justify-content: space-between;
+	padding: .5rem;
+    background-color: #142441;
+}
+.foot-list{
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	font-size: large;
+}
+footer li a,i{
+	color: white;
+}
+#foot-list1,#foot-list2 a,li{
+	color: white;
+	margin: 0 1rem;
+}
+
+#foot-list2 i{
+	padding-right: .3rem;
+}
+@media only screen and (min-width: 768px) {
+  #foot-list1, #foot-list2 {
+      width: 48%; /* Adjust the percentage based on your design */
+  }
+}
