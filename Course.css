@@ -53,7 +53,7 @@ body {
 }
 .per-represent{
     width: 25rem;
-      height: 10rem;
+      height: 11rem;
       background-color: rgb(255, 255, 255);
       border-radius: 1rem;
       border-top-left-radius: 100%;
@@ -62,7 +62,7 @@ body {
       padding: 20px;
       box-shadow: 2px 2px 2px gainsboro;
       display: flex;
-      justify-content:space-between;
+      gap: 2rem;
 }
 .sub-intro{
     line-height: 1.6rem;
@@ -143,6 +143,9 @@ body {
       transform: rotate(315deg);
     }
   }
+  .bars{
+    width: 100%;
+  }
   .progress-bar {
     width: 100%;
     background-color: #ddd;
@@ -157,7 +160,6 @@ body {
     width: 0;
     background-color: #3498db; 
     text-align: center;
-    line-height: 30px;
     color: white;
     transition: width 1s ease-in-out; 
 }
@@ -268,11 +270,11 @@ table {
     justify-content: space-between;
 }
 .review-card {
-    border: 1px solid #ddd;
+    border: 1px solid white;
     border-radius: 8px;
     padding: 20px;
     margin-top: 3rem;
-
+    background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
 }
@@ -333,4 +335,88 @@ footer li a,i{
 
 #foot-list2 i{
 	padding-right: .3rem;
+}
+@media screen and (max-width:500px ){
+  .per-represent{
+    flex-direction: column;
+    margin-bottom: 10rem;
+    border-radius: 1rem;
+      border-top-left-radius: 0%;
+      border-bottom-left-radius: 0%;
+}
+}
+@media screen and (max-width: 720px) {
+ 
+ .navbar a, .navbar #logo {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+.navbar input[type=text] {
+  width: 100%;
+}
+#page-head{
+    height: 10rem;
+    color: white;
+    font-size: large;
+}
+#page-head h2{
+    width: 85%;
+    margin: auto;
+}
+.sub-intro{
+  flex-direction: column;
+ }
+ .sub-intro P{
+  width: 60%;
+ }
+ .per-represent{
+    margin-top: 0rem;
+}
+.remaining-details{
+  width: 100%;
+}
+.progress-bar {
+  margin-bottom: 0px;
+}
+table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+section{
+  margin: auto;
+}
+.overview-section{
+  flex-direction: column-reverse;
+}
+.course-card,.review-form,.review-card{
+  width: 90%;
+}
+.review-card{
+  padding: 10px;
+  margin: auto;
+  margin-top: 3rem;
+}
+#page-foot{
+  flex-direction: column;
+}
+.foot-list{
+  width: 20rem;
+}
+section{
+  margin-top: 4rem;
+}
+}
+
+@media (min-width:720px)and (max-width:1160px) {
+  section{
+    width: 47%;
+  }
+  form input {
+    width: 13rem;
+  }
+  .course-card{
+    width: 15rem;
+  }
 }
