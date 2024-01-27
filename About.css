@@ -52,9 +52,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: baseline;
-    line-height: 1.5;
-    
-    
+    line-height: 1.5; 
 }
 #page-head h2{
     width: 55%;
@@ -148,7 +146,7 @@ footer li a,i{
 	padding-right: .3rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
     .navbar a, .navbar #logo {
         display: block;
         width: 100%;
@@ -157,5 +155,28 @@ footer li a,i{
 
     .navbar input[type=text] {
         width: 100%;
+    }
+    #page-details,#page-head h2,.contributor{
+        font-size: large;
+        width: 75%;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 570px) {
+    .profile-section {
+        flex-direction: column;
+    }
+    #page-foot{
+        flex-direction: column;
+    }
+    .foot-list{
+        width: 20rem;
+
+    }
+}
+@media screen and (max-width: 570px) {
+    .foot-list{
+        width: 13rem;
+
     }
 }
