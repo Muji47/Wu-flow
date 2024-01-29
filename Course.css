@@ -335,6 +335,14 @@ footer li a,i{
       border-top-left-radius: 0%;
       border-bottom-left-radius: 0%;
 }
+.circle-wrap{
+  margin-bottom: 5rem;
+}
+.per-represent{
+  width: 15rem;
+  height: 25rem;
+  margin: auto;
+}
 }
 @media screen and (max-width: 720px) {
  
